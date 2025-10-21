@@ -67,6 +67,51 @@ ul {
   animation-delay: 4s;
 }
 
+/* Coffee section */
+
+.coffee-section {
+  display: flex;
+  flex-direction: column; /* stack image and button vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center; /* optional: center vertically if needed */
+  margin-top: 2rem;       /* spacing from the content above */
+  gap: 1rem;              /* space between image and button */
+}
+
+.coffee-section img {
+  display: block;
+  max-width: 50%;
+  height: auto;  /* corrects the previous typo: 'heigh' → 'height' */
+  margin-bottom: 1rem;
+}
+
+/* Coffee Button */
+
+.coffee-btn {
+  background: linear-gradient(145deg, #6f4e37, #a6785a); /* coffee brown gradient */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.coffee-btn:hover {
+  background: linear-gradient(145deg, #a6785a, #6f4e37); /* reversed gradient on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.coffee-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
 @keyframes moveAround {
   0% {
     top: 5%;
